@@ -1,17 +1,17 @@
-# name: first-workflow
-# on:
-#   pull_request:
-#     types:
-#       - "opened"
-#       - "closed"
-#     branches:
-#     - main
-#   push:
-#     branches: 
-#     - main
-# jobs:
-#   first-job:
-#     runs-on: ubuntu-latest
-#     steps:
-#     - name: step-1
-#       run: echo "welcome to your first workflow"
+name: first-workflow
+on:
+  pull_request:
+    types:
+      - "opened"
+      - "closed"
+    branches:
+    - main
+  push:
+    branches: 
+    - main
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: step-1
+      run: echo "welcome to your first workflow"
